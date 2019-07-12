@@ -9,12 +9,16 @@ package sheridan.vegetables;
  *
  * @author layth
  */
-abstract class Beans extends Vegetable {
+public class Beans extends Vegetable {
     
-   public boolean isTasty (){
-       return true; 
-   }
- }
-    
-    
+    public Beans(String name, String colour){
+        super(name,colour);
+    }
+    @Override
+    public boolean isTasty(){
+        return true;
+    }
 }
+    
+    
+
